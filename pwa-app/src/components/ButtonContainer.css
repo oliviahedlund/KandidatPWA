@@ -1,0 +1,30 @@
+.ColumnContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+}
+
+.Button {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  align-items: center;
+}
+
+.Button-link {
+  width: 200px;
+}
+
+.Button-grid {
+  width: 200px;
+  height: 60px;
+  font-size: large;
+}
+
+.fa-camera {
+  padding-right: 10px;
+}
+
+.fa-bluetooth {
+  padding-right: 10px;
+}

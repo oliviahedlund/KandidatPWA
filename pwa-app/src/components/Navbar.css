@@ -1,0 +1,30 @@
+:root {
+}
+
+.navbar {
+  background: var(--primaryColor);
+  height: 80px;
+  display: flex;
+  top: 0;
+  z-index: 999;
+}
+
+/*web app*/
+.navbar-logo {
+  color: #000;
+  justify-self: start;
+  margin-left: -20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(25%, 50%);
+}
+
+.fa-paper-plane {
+  padding-right: 15px;
+}

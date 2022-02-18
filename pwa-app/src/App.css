@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --textColor1: rgb(53, 53, 53);
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  color: var(--textColor1);
+  overflow: hidden;
+  /*margin: 0 8px;*/
+}
+
+.container {
+  height: 100%;
+  overflow: hidden;
+  text-align: center; /*center all*/
+  padding-top: 20px;
+  color: var(--textColor1);
+}
+
+button {
+  padding: 8px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 2px solid var(--textColor1);
+  color: black;
+  background-color: #ffffff;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: var(--primaryColor);
+  border: 2px solid;
+}
+
+.error {
+  margin: 5px 0;
+  color: red;
+}
