@@ -1,5 +1,5 @@
 import React from "react";
-import FunctionItem from "./FunctionItem";
+import { Link } from "react-router-dom";
 import "./ButtonContainer.css";
 import "../App.css";
 
@@ -8,12 +8,22 @@ function ButtonContainer() {
     <div className="ColumnContainer">
       <h3>Here are your options:</h3>
       <ul>
-        <FunctionItem path="/camera" name="Go to Camera" icon="fas fa-camera" />
-        <FunctionItem
-          path="/bluetooth"
-          name="Go to Bluetooth"
-          icon="fab fa-bluetooth"
-        />
+
+        <Link className="Button" to="/camera">
+          <button className="Button-grid">
+            <i class="fas fa-camera"></i>
+            Go to Camera
+          </button>
+        </Link>
+
+        <Link className="Button" to="/bluetooth">
+          <button className="Button-grid">
+            <i class="fab fa-bluetooth"></i>
+            Go to Bluetooth
+          </button>
+        </Link>
+    
+
       </ul>
     </div>
   );
