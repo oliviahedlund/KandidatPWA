@@ -1,7 +1,8 @@
 import React from "react";
 import "../../App.css";
 import Camera from 'react-html5-camera-photo';
-import 'react-html5-camera-photo/build/css/index.css';
+/*import 'react-html5-camera-photo/build/css/index.css';*/
+import './CameraPage.css'
 import { useState, useRef } from "react";
 
 function CameraPage() {
