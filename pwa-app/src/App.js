@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/pages/Home";
-import Camera from "./components/pages/Camera";
+import CameraPage from "./components/pages/CameraPage";
 import Bluetooth from "./components/pages/Bluetooth";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/camera" element={<Camera />} />
+          <Route path="/camera" element={<CameraPage />} />
           <Route path="/bluetooth" element={<Bluetooth />} />
         </Routes>
       </Router>
