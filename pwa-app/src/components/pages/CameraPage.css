@@ -1,3 +1,19 @@
+.fa-times-circle {
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+}
+
+.react-html5-camera-photo .btn {
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 20px;
+  background-color: transparent;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
 #container-circles {
   position: absolute;
   left: 50%;
@@ -27,13 +43,7 @@
   margin: -24px 0 0 -24px; /*halva i*/
   z-index: 2;
 }
-/*
-#inner-circle.is-clicked {
-  height: 38px;
-  width: 38px;
-  margin: -19px 0 0 -19px;
-}
-*/
+
 #white-flash.normal {
   position: absolute;
   height: 100%;
@@ -83,4 +93,13 @@
   width: 100vw;
   height: 100vh;
 }
-/*# sourceMappingURL=index.css.map*/
+
+.imageContainer > img {
+  width: 768px;
+}
+
+@media (max-width: 768px) {
+  .imageContainer > img {
+    width: 100%;
+  }
+}
