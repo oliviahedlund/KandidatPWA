@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -10,7 +10,7 @@ function Navbar() {
       <nav className="navbar">
         <Link to="/" className="navbar-logo">
           <i class="fas fa-paper-plane"></i>
-          OLIN Webb
+          OLIN PWA
         </Link>
       </nav>
     </>
