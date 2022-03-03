@@ -6,10 +6,9 @@
 }
 
 body {
-  height: 100vh;
-  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  background: #ffffff;
   color: var(--textColor1);
-  overflow: hidden;
+  overflow: scroll;
   /*margin: 0 8px;*/
 }
 

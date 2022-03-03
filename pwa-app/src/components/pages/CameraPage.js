@@ -9,7 +9,6 @@ function CameraPage() {
   
   const [errorMessage, setErrorMessage] = useState('');
   const [dataUri, setDataUri] = useState('');
-  const [facingMode, setFacingMode] = useState(FACING_MODES.USER);
   const [mirroredMode, setMirroredMode] = useState(true);
 
   function handleCameraError (error) {
