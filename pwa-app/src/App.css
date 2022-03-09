@@ -16,7 +16,6 @@ body {
   text-align: center; /*center all*/
   padding-top: 0px;
   color: var(--textColor1);
-  background-color: aqua;
   height: 100%;
 }
 
