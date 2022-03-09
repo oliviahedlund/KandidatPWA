@@ -9,7 +9,7 @@ body {
   background: #ffffff;
   color: var(--textColor1);
   overflow: scroll;
-  /*margin: 0 8px;*/
+  margin: 0;
 }
 
 .container {

@@ -30,7 +30,7 @@ function CameraPage() {
   }
 
   return (
-    <div id="container" className="container">
+    <div>
       {
         (errorMessage) ? <p className="error">{errorMessage}</p>
         : (dataUri)
