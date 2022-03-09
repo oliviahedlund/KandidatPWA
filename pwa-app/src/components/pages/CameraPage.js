@@ -53,8 +53,7 @@ function CameraPage() {
             isFullscreen={false}
             idealFacingMode = {(mirroredMode)? FACING_MODES.USER: FACING_MODES.ENVIRONMENT}
             isImageMirror = {mirroredMode}
-            isMaxResolution={true}    
-            isFullscreen={true}      
+            isMaxResolution={true}      
             />
         </div>
         }
