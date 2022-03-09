@@ -11,15 +11,13 @@ function ButtonContainer() {
 
         <Link className="Button" to="/camera">
           <button className="Button-grid">
-            <i class="fas fa-camera"></i>
-            Go to Camera
+            Camera
           </button>
         </Link>
 
         <Link className="Button" to="/bluetooth">
           <button className="Button-grid">
-            <i class="fab fa-bluetooth"></i>
-            Go to Bluetooth
+            Bluetooth
           </button>
         </Link>
     

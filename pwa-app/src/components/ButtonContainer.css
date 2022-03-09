@@ -7,15 +7,13 @@
 
 .Button {
   display: flex;
-  width: 200px;
   padding-top: 24px;
   text-decoration: none;
 }
 
 .Button-grid {
-  width: 200px;
-  height: 60px;
-  font-size: large;
+  font-size: medium;
+  margin: 0 auto; /*centrerar*/
 }
 
 .fa-camera {
