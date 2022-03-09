@@ -13,11 +13,21 @@ body {
 }
 
 .container {
-  height: 100%;
-  overflow: hidden;
   text-align: center; /*center all*/
-  padding-top: 20px;
+  padding-top: 0px;
   color: var(--textColor1);
+  background-color: aqua;
+  height: 100%;
+}
+
+h1 {
+  font-size: 30pt;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+p {
+  overflow-wrap: break-word;
 }
 
 button {
@@ -26,7 +36,7 @@ button {
   cursor: pointer;
   border: 2px solid var(--textColor1);
   color: black;
-  background-color: #ffffff;
+  background-color: hsl(0, 0%, 100%);
 }
 
 button:hover {

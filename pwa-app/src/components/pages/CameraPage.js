@@ -31,32 +31,32 @@ function CameraPage() {
 
   return (
     <div id="container" className="container">
-      <h1>Hello from Camera!</h1>
-      <p className="error">{errorMessage}</p>
-      
-        {
-          (dataUri)
+      {
+        (errorMessage) ? <p className="error">{errorMessage}</p>
+        : (dataUri)
           ? <div className="react-html5-camera-photo">
               <div className="btn">
                   <i class="far fa-times-circle" onClick={closePic}></i>
               </div>
               <img src={dataUri} alt="webcam"/>
             </div>
-          : 
-          <div className="react-html5-camera-photo">
-            <MobileView className="btn" >
-              <i class="fas fa-exchange-alt" onClick={switchCamera}></i>
-            </MobileView>
-            <Camera
-              isSilentMode={true}
-              onTakePhoto = {handleTakePhoto}
-              onCameraError={(error) => {handleCameraError(error);}}
-              isDisplayStartCameraError={false}
-              isFullscreen={false}
-              idealFacingMode = {(mirroredMode)? FACING_MODES.USER: FACING_MODES.ENVIRONMENT}
-              isImageMirror = {mirroredMode}
+        : 
+        <div className="react-html5-camera-photo">
+          <MobileView className="btn" >
+            <i class="fas fa-exchange-alt" onClick={switchCamera}></i>
+          </MobileView>
+          <Camera
+            isSilentMode={true}
+            onTakePhoto = {handleTakePhoto}
+            onCameraError={(error) => {handleCameraError(error);}}
+            isDisplayStartCameraError={false}
+            isFullscreen={false}
+            idealFacingMode = {(mirroredMode)? FACING_MODES.USER: FACING_MODES.ENVIRONMENT}
+            isImageMirror = {mirroredMode}
+            isMaxResolution={true}    
+            isFullscreen={true}      
             />
-          </div>
+        </div>
         }
     </div>
   );

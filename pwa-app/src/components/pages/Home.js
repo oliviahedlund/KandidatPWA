@@ -6,7 +6,7 @@ import ButtonContainer from "../ButtonContainer";
 function Home() {
   return (
     <div id="container" className="container">
-      <h1>Hello from Home! </h1>
+      <h1>Welcome home! </h1>
       <ButtonContainer />
     </div>
   );
