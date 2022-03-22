@@ -20,7 +20,10 @@
   position: relative;
   text-align: center;
   margin: 0 auto; /* centrerar */
-  height: calc(100vh - 80px); /* 80px = header height */
+  /* flyttat till App.css
+  --window-height: 100vh;
+  --window-height: calc(var(--vh, 1vh) * 100); /* --vh beräknas i App.js*/
+  height: calc(var(--window-height) - 80px);
   overflow: hidden;
   max-width: 800px;
 }

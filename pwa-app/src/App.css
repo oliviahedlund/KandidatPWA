@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   --textColor1: rgb(53, 53, 53);
+  --window-height: 100vh;
+  --window-height: calc(var(--vh, 1vh) * 100); /* --vh beräknas i App.js*/
 }
 
 body {
