@@ -4,7 +4,7 @@
   text-shadow: 0 0 2px #000;
 }
 
-.btn {
+.corner-btn {
   position: absolute;
   padding-top: 15px;
   padding-left: 20px;
@@ -19,46 +19,18 @@
 .react-html5-camera-photo {
   position: relative;
   text-align: center;
-  margin: 0 auto; /*centrerar*/
-  height: calc(100vh - 80px); /*80px = header-height*/
+  margin: 0 auto; /* centrerar */
+  height: calc(100vh - 80px); /* 80px = header height */
   overflow: hidden;
+  max-width: 800px;
 }
 
 .react-html5-camera-photo > img,
 .react-html5-camera-photo > video {
   height: 100%;
-  margin: 0 -100%;
-}
-/*
-@media (max-width: 768px) {
-  .react-html5-camera-photo {
-    width: 100%;
-  }
-}
-/*******/
-/*
-.react-html5-camera-photo {
-  position: relative;
-  text-align: center;
-  width: 768px;
-  margin: 0 auto; /*centrerar*/ /*
+  margin: 0 -100%; /* centrerar avklippt bild */
 }
 
-.react-html5-camera-photo > img,
-.react-html5-camera-photo > video {
-  width: 100%;
-}
-.react-html5-camera-photo > .display-error {
-  width: 100%;
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .react-html5-camera-photo {
-    width: 100%;
-  }
-}
- */
 /* ------ foto-knapp ------ */
 #container-circles {
   position: absolute;
@@ -66,7 +38,7 @@
   bottom: 90px;
 }
 #outer-circle {
-  left: -35px; /*halva o*/
+  left: -35px; /*halva outer-radie*/
   height: 70px;
   width: 70px;
   border: 6px solid white;
@@ -82,15 +54,16 @@
 
 #inner-circle {
   left: 50%;
-  top: 29px; /*halva o - border */
+  top: 29px; /*halva outer-radie - border */
   height: 48px;
   width: 48px;
   background: #fff;
-  margin: -24px 0 0 -24px; /*halva i*/
+  margin: -24px 0 0 -24px; /*halva inner-radie*/
   z-index: 2;
 }
 
 /* ------ ta foto ------ */
+/* händer inget?
 #white-flash.normal {
   position: absolute;
   height: 100%;
@@ -104,6 +77,8 @@
   opacity: 0;
   background: #fff;
 }
+*/
+
 #display-error {
   color: #000;
   background-color: #fff;

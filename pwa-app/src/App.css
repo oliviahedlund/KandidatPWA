@@ -38,12 +38,6 @@ button {
   background-color: #e5e4df;
 }
 
-button:hover {
-  cursor: pointer;
-  color: #000;
-  background-color: var(--primaryColor);
-}
-
 .error {
   margin: 5px 0;
   color: red;

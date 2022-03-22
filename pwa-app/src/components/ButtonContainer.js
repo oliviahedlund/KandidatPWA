@@ -9,14 +9,14 @@ function ButtonContainer() {
       <h3>Here are your options:</h3>
       <ul>
 
-        <Link className="Button" to="/camera">
-          <button className="Button-grid">
+        <Link className="Button-grid" to="/camera">
+          <button className="Button">
             Camera
           </button>
         </Link>
 
-        <Link className="Button" to="/bluetooth">
-          <button className="Button-grid">
+        <Link className="Button-grid" to="/bluetooth">
+          <button className="Button">
             Bluetooth
           </button>
         </Link>

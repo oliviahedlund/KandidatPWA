@@ -5,13 +5,13 @@
   align-items: center;
 }
 
-.Button {
+.Button-grid {
   display: flex;
   padding-top: 24px;
   text-decoration: none;
 }
 
-.Button-grid {
+.Button {
   font-size: medium;
   margin: 0 auto; /*centrerar*/
 }

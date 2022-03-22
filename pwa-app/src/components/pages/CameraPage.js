@@ -33,24 +33,24 @@ function CameraPage() {
     <div>
       {
         (errorMessage) ? <p className="error">{errorMessage}</p>
-        : (dataUri)
-          ? <div className="react-html5-camera-photo">
-              <div className="btn">
+        : 
+        (dataUri) ? 
+            <div className="react-html5-camera-photo">
+              <div className="corner-btn">
                   <i class="far fa-times-circle" onClick={closePic}></i>
               </div>
               <img src={dataUri} alt="webcam"/>
             </div>
         : 
         <div className="react-html5-camera-photo">
-          <MobileView className="btn" >
+          <MobileView className="corner-btn" >
             <i class="fas fa-exchange-alt" onClick={switchCamera}></i>
           </MobileView>
           <Camera
             isSilentMode={true}
-            onTakePhoto = {handleTakePhoto}
+            onTakePhoto = {(dataUri) => { handleTakePhoto(dataUri); }}
             onCameraError={(error) => {handleCameraError(error);}}
             isDisplayStartCameraError={false}
-            isFullscreen={false}
             idealFacingMode = {(mirroredMode)? FACING_MODES.USER: FACING_MODES.ENVIRONMENT}
             isImageMirror = {mirroredMode}
             isMaxResolution={true}      
