@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Camera, {FACING_MODES} from 'react-html5-camera-photo';
 import { MobileView } from 'react-device-detect';
 import "../../App.css";
-import './CameraPage.css'
+import './CameraPage.css';
 
 function CameraPage() {
   const [errorMessage, setErrorMessage] = useState('');
