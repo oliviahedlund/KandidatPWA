@@ -14,14 +14,7 @@ function ButtonContainer() {
             Camera
           </button>
         </Link>
-
-        <Link className="Button-grid" to="/bluetooth">
-          <button className="Button">
-            Bluetooth
-          </button>
-        </Link>
     
-
       </ul>
     </div>
   );

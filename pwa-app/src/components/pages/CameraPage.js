@@ -1,29 +1,27 @@
-import React from "react";
-import "../../App.css";
+import React, { useState, useEffect } from "react";
 import Camera, {FACING_MODES} from 'react-html5-camera-photo';
-import './CameraPage.css'
-import { useState } from "react";
 import { MobileView } from 'react-device-detect';
+import "../../App.css";
+import './CameraPage.css'
 
 function CameraPage() {
-  
   const [errorMessage, setErrorMessage] = useState('');
   const [dataUri, setDataUri] = useState('');
   const [mirroredMode, setMirroredMode] = useState(true);
 
-  function handleCameraError (error) {
+  const handleCameraError =(error) => {
     setErrorMessage(error.toString());
   }
 
-  function handleTakePhoto (dataUri) {
+  const handleTakePhoto = (dataUri) => {
     setDataUri(dataUri);
   }
 
-  function closePic () {
+  const closePic = () => {
     setDataUri('');
   }
 
-  function switchCamera () {
+  const switchCamera = () => {
     (mirroredMode) 
     ? setMirroredMode(false) 
     : setMirroredMode(true);
