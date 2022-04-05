@@ -9,7 +9,7 @@ function CameraPage() {
   const [dataUri, setDataUri] = useState('');
   const [mirroredMode, setMirroredMode] = useState(true);
 
-  const handleCameraError =(error) => {
+  const handleCameraError = (error) => {
     setErrorMessage(error.toString());
   }
 
