@@ -4,7 +4,7 @@ import { MobileView } from 'react-device-detect';
 import "../../App.css";
 import './CameraPage.css';
 
-function CameraPage() {
+const CameraPage = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const [dataUri, setDataUri] = useState('');
   const [mirroredMode, setMirroredMode] = useState(true);
@@ -45,7 +45,6 @@ function CameraPage() {
             <i class="fas fa-exchange-alt" onClick={switchCamera}></i>
           </MobileView>
           <Camera
-            isSilentMode={true}
             onTakePhoto = {(dataUri) => { handleTakePhoto(dataUri); }}
             onCameraError={(error) => {handleCameraError(error);}}
             isDisplayStartCameraError={false}
